@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #dates-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 200px;
+      height: calc(100vh - 20px);
+      background-color: lavender;
+      overflow: auto;
+      z-index: 2000;
+    }
+  </style>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="getSHauthToken.js"></script>
+  <script src="getSHdates.js"></script>
+  <script src="shLeafletLayer.js"></script>
+  <script src="index.js"></script>
+</head>
+</body>
+
+<div id="map"></div>
+<div id="dates-container">
+  <button onclick="getDatesForCurrentView()">Refresh dates</button>
+  <div id="dates-list"></div>
+</div>
+
+</body>
+
+</html>
