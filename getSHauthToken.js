@@ -1,5 +1,5 @@
-const CLIENT_ID = "37919fc2-b629-46e4-9e24-348f3b1ebf9b";
-const CLIENT_SECRET = "hHm[abz^gy^m>YRIezy9.NUO7%b#?!C^xLCF{YG5";
+const CLIENT_ID = "<your-client-id-here>";
+const CLIENT_SECRET = "<your-client-secret-here>";
 
 async function getAuthToken() {
 	const clientId = encodeURIComponent(CLIENT_ID);
