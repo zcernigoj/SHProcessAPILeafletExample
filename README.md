@@ -1,4 +1,4 @@
-# Sentinel Hub Process API & Leaflet example
+# Sentinel Hub APIs & Leaflet example
 
 This is a simple example how to use Sentinel Hub Catalog API and Process API with Leaflet.js
 
